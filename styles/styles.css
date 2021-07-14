@@ -28,11 +28,19 @@ nav{
 }
 .navbar h3{
     font-size: 16px;
+    font-weight: 700;
 }
 nav a{
     text-decoration: none;
     padding: 18px;
     color: #FFFFFF;
+}
+.profile-nav:hover {
+    transform: scale(1.1);
+    transition: transform 0.25s ease-in-out;
+    background-color: #271f91;
+    border-radius: 24px;
+    
 }
 .login-button h3, .watch-button{
     background-color: #E02C6D;
@@ -48,7 +56,7 @@ nav a{
 .headline{
     display: flex;
     justify-content: space-evenly;
-    align-items: center;
+    /* align-items: center; */
 }
 .main-title h1{
     font-size: 64px;
@@ -56,8 +64,12 @@ nav a{
     color: #FFFFFF;
     margin-bottom: 27px;   
 }
+.main-title{
+    width: 500px;
+    margin-left: 100px;
+}
 
-.main-title a, .highlights-title a{
+.main-title a, .highlight-title a{
     text-decoration: none;
     color: #FFFFFF;
     font-size: 16px;
@@ -100,35 +112,89 @@ nav a{
     grid-row-gap: 27px;
     padding: 85px 195px 195px 165px;
 }
+.articles h3{
+    font-size: 28px;
+    font-weight: 700;
+}
+.articles p{
+    font-size: 16px;
+    font-weight: 400;
+}
+
 .player{
     box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
     background-color: #FFFFFF;
-    border-radius: 5px;
+    border-radius: 10px;
     padding: 15px 15px 33px 15px;
 }
 .player-image img{
     width: 100%;
+    border-radius: 10px;
+}
+.player:hover img, .highlight-image:hover img {
+    transform: scale(1.1);
+    transition: transform 1s ease-in-out;
 }
 
 
 /* ================: Match Highlights Section :============== */
 .match-highlights{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     padding: 0 187px 0 182px;
 }
-/* .highlight-title{
+.highlight-title{
     width: 480px;
     height: 309px;
-} */
+    margin-left: -15px
+}
 .highlight-title h3{
     font-size: 48px;
+    font-weight: 700;
 }
 .highlight-title p{
     margin-bottom: 24px;
+    text-align: justify;
+    font-size: 16px;
+    font-weight: 400;
     
 }
 .highlight-image img{
     width: 567px;
     height: 427px;
+    border-radius: 6px;
+}
+
+
+/* -------------------------------------
+            Footer Section
+-------------------------------------*/
+.logo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 158px 475px 65px 475px;
+}
+.icons{
+   margin-left: 38px;
+}
+.icons a{
+    text-decoration: none;
+    color: #969BAB;
+}
+.logo-1 img{
+    width: 483px;
+    height: 110px;
+}
+.social-icons i{
+    width: 32px;
+    height: 32px;
+}
+.social-icons p{
+    font-size: 18px;
+    font-weight: 400;
+}
+.icons:hover i{
+    transform: scale(1.2);
+    transition: transform 0.5s ease-in-out;
 }
