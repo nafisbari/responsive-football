@@ -4,6 +4,9 @@ body{
     /* background-color: #F3F1FF; */
     margin: 0;
 }
+p{
+    text-align: justify;
+}
 
 
 /* --------------------
@@ -137,8 +140,7 @@ nav a{
 .match-highlights{
     display: flex;
     justify-content: space-around;
-    margin: 0 60px 0 50px;
-    
+    margin: 0 60px 0 50px;   
 }
 
 .highlight-title h3{
@@ -157,6 +159,24 @@ nav a{
     border-radius: 6px;
 }
 
+/* -------Extra ------- */
+.match-highlights-euro{
+    display: flex;
+    justify-content: space-around;
+    margin: 50px 60px 0 50px;   
+    align-content: center;
+}
+.highlight-iframe{
+    margin-top: 59px;
+}
+iframe{
+    border-radius: 6px;
+}
+
+hr{
+    border: 2px solid #858585;
+    margin: 90px 100px 0px 120px;
+}
 
 /* -------------------------------------
             Footer Section
@@ -165,7 +185,7 @@ nav a{
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 158px 475px 65px 475px;
+    margin: 58px 475px 65px 475px;
 }
 .icons{
    margin-left: 40px;
@@ -221,7 +241,7 @@ nav a{
         margin: 47px 15px 54px 15px;
         
     }
-    .match-highlights{
+    .match-highlights, .match-highlights-euro{
         flex-direction: column;
         margin: 15px 10px 15px 10px;
     }
@@ -230,10 +250,15 @@ nav a{
         margin: 0 15px 30px 15px;
      
     }
-    .highlight-image img{
+    .highlight-image img, iframe{
         width: 94.5%;
         margin: 30px 15px 54px 15px;
     }
+    hr{
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+   
     .icons {
     display: flex;
     }
@@ -242,6 +267,9 @@ nav a{
     }
     .logo img{
         width: 100%;
+    }
+    .logo p{
+        text-align: center;
     }
    
 }
