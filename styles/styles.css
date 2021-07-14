@@ -1,6 +1,7 @@
 /*------ fonts  ------*/
 body{
     font-family: 'Poppins', sans-serif;
+    /* background-color: #F3F1FF; */
     margin: 0;
 }
 
@@ -8,10 +9,9 @@ body{
 /* --------------------
     Header Style
 -------------------*/
-header{
+.header{
     background-color: #2D25A0;
-    height: 677px;
-    padding: 42px 124px 86px 156px;
+
 }
 
 
@@ -56,17 +56,13 @@ nav a{
 .headline{
     display: flex;
     justify-content: space-evenly;
-    /* align-items: center; */
+   
 }
 .main-title h1{
     font-size: 64px;
     font-weight: bold;
     color: #FFFFFF;
     margin-bottom: 27px;   
-}
-.main-title{
-    width: 500px;
-    margin-left: 100px;
 }
 
 .main-title a, .highlight-title a{
@@ -110,7 +106,7 @@ nav a{
     grid-template-columns: repeat(3, 1fr);
     grid-column-gap: 30px;
     grid-row-gap: 27px;
-    padding: 85px 195px 195px 165px;
+    margin: 70px 210px 165px 180px;
 }
 .articles h3{
     font-size: 28px;
@@ -140,21 +136,17 @@ nav a{
 /* ================: Match Highlights Section :============== */
 .match-highlights{
     display: flex;
-    justify-content: space-between;
-    padding: 0 187px 0 182px;
+    justify-content: space-around;
+    margin: 0 60px 0 50px;
+    
 }
-.highlight-title{
-    width: 480px;
-    height: 309px;
-    margin-left: -15px
-}
+
 .highlight-title h3{
     font-size: 48px;
     font-weight: 700;
 }
 .highlight-title p{
     margin-bottom: 24px;
-    text-align: justify;
     font-size: 16px;
     font-weight: 400;
     
@@ -173,10 +165,10 @@ nav a{
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 158px 475px 65px 475px;
+    margin: 158px 475px 65px 475px;
 }
 .icons{
-   margin-left: 38px;
+   margin-left: 40px;
 }
 .icons a{
     text-decoration: none;
@@ -197,4 +189,59 @@ nav a{
 .icons:hover i{
     transform: scale(1.2);
     transition: transform 0.5s ease-in-out;
+}
+
+
+/* ------------------------------
+        Media Queries
+-------------------------------*/
+@media only screen and (max-width:688px) {
+    /* =========: Header :========= */
+    nav{
+        display: none;
+    }
+     
+    .headline {
+       flex-direction: column;
+       align-items: center;
+    }
+    
+    .headline img{
+        width: 100%;
+        margin-top: 50px;
+    }
+    
+    .container{
+      width: 100%;
+    }
+    .articles{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-row-gap: 24px;
+        margin: 47px 15px 54px 15px;
+        
+    }
+    .match-highlights{
+        flex-direction: column;
+        margin: 15px 10px 15px 10px;
+    }
+   
+    .highlight-title{
+        margin: 0 15px 30px 15px;
+     
+    }
+    .highlight-image img{
+        width: 94.5%;
+        margin: 30px 15px 54px 15px;
+    }
+    .icons {
+    display: flex;
+    }
+    .logo{
+        margin: 43px 78px 187px 70px;
+    }
+    .logo img{
+        width: 100%;
+    }
+   
 }
